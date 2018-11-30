@@ -9,9 +9,11 @@
 namespace App;
 
 
-class MenuItem
+use Illuminate\Database\Eloquent\Model;
+
+class MenuItem extends Model
 {
-    protected $table = 'menu_items';
+    protected $table = 'menu_item';
 
 
     protected $fillable = ['menu_id','description','type','next_menu_id','step','confirmation_phrase'];

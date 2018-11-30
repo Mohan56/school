@@ -11,6 +11,13 @@ namespace App;
 
 class Service
 {
+    protected $table = 'ussd_logs';
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
     protected $fillable = [
         'plumber', 'mechanic', 'carpenter', 'painter', 'gardener',
     ];

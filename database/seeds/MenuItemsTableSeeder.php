@@ -20,8 +20,9 @@ class MenuItemsTableSeeder extends Seeder
         DB::table('menu_item')->delete();
 
         DB::table('menu_item')->insert(array(
+
             array(
-                'menu_id' => 1,
+                'menu_id' => 2,
                 'description' => 'Customer',
                 'next_menu_id' => 2,
                 'step' => 0,
@@ -29,8 +30,32 @@ class MenuItemsTableSeeder extends Seeder
 
             ),
             array(
-                'menu_id' => 1,
+                'menu_id' => 2,
                 'description' => 'Artisan',
+                'next_menu_id' => 2,
+                'step' => 0,
+                'confirmation_phrase' => '',
+
+            ),
+            array(
+                'menu_id' => 2,
+                'description' => 'Enter Firstname',
+                'next_menu_id' => 2,
+                'step' => 0,
+                'confirmation_phrase' => '',
+
+            ),
+            array(
+                'menu_id' => 2,
+                'description' => 'Enter Lastname',
+                'next_menu_id' => 2,
+                'step' => 0,
+                'confirmation_phrase' => '',
+
+            ),
+            array(
+                'menu_id' => 2,
+                'description' => 'Enter Idno',
                 'next_menu_id' => 2,
                 'step' => 0,
                 'confirmation_phrase' => '',

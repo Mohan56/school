@@ -27,6 +27,12 @@ class MenusTableSeeder extends Seeder
                 'type' => 1,
                 'confirmation_message' => "",
             ),
+            array(
+                'title' => 'Registration',
+                'is_parent' => 0,
+                'type' => 2,
+                'confirmation_message' => "",
+            ),
         ));
     }
 }
